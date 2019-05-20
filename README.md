@@ -1,3 +1,9 @@
+
+# Assignment
+1) Added links to the side bar. Each link on click will change color and takes the user to google.
+2) Fixed Header: The header flows over the content and the position is fixed. Header and content adjust based on the screen width. Also added another component in the content page.
+
+
 # Chuck's Ducks Data Analytics
 
 Welcome to the Data Analytics platform for Chuck's Ducks! Chuck's Ducks is a family owned rubber duck store. They sell all kinds of rubber ducks; classic yellow ducks, tiny ducks, giant ducks, and even ducks with an improved debugging module. They've been seeing higher web traffic and more sales in recent years and want to bring their data analytics to the web. This is the code that will hopefully take their business to the next level.
