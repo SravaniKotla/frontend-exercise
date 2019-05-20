@@ -9,6 +9,14 @@
   flex-direction: row;
 }
 
+.content .description-container {
+  display: block;
+}
+.content .description-container .description-column {
+  width: 100%;
+  padding: 20px 0 20px 20px;
+}
+
 .content .store-container .store-column {
   flex: 1;
 

@@ -20,10 +20,12 @@ export default class IconButton {
   getElement() {
     this._button.className = "icon-button";
 
-    const icon = document.createElement("i");
+    const icon = document.createElement("a");
+    icon.href = "https://google.com";
     icon.className = `fas fa-${this._iconName} fa-3x`;
     this._button.appendChild(icon);
 
     return this._button;
   }
 }
+

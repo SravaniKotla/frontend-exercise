@@ -3,6 +3,7 @@ import RangeCard from "./RangeCard";
 import PercentageCard from "./PercentageCard";
 import AddRangeCard from "./AddRangeCard";
 import PieChartCard from "./PieChartCard";
+import DescriptionCard from './DescriptionCard';
 
 /**
  * Contains all of the data content
@@ -28,7 +29,6 @@ export default class Content {
    */
   getElement() {
     this._container.className = "content";
-    this._container.id = "content";
 
     /***************************
      ***      Customers      ***
@@ -45,6 +45,17 @@ export default class Content {
     cardsContainer.appendChild(uniqueCustomersCard.getElement());
     cardsContainer.appendChild(addCard.getElement());
 
+    
+    /***************************
+     ***        Description        ***
+     ***************************/
+    const descriptionTitle = document.createElement("h3");
+    descriptionTitle.innerText = "Description";
+    const descriptionContainer = document.createElement("div");
+    descriptionContainer.className = "Description-container";
+    const descriptionColumn1 = document.createElement("div");
+    descriptionColumn1.className = "Description-column";
+
     /***************************
      ***        Store        ***
      ***************************/
@@ -60,6 +71,7 @@ export default class Content {
 
     storeContainer.appendChild(storeColumn1);
     storeContainer.appendChild(storeColumn2);
+    descriptionContainer.appendChild(descriptionColumn1);
 
     const storePieCard = new PieChartCard();
     storeColumn1.appendChild(storePieCard.getElement());
@@ -73,12 +85,16 @@ export default class Content {
       title: "Perfect Order Rate",
       value: 97.2
     });
+    const descriptionRateCard = new DescriptionCard();
+    descriptionColumn1.appendChild(descriptionRateCard.getElement());
     storeColumn2.appendChild(perfectOrderRateCard.getElement());
 
     this._container.appendChild(customersTitle);
     this._container.appendChild(cardsContainer);
     this._container.appendChild(storeTitle);
     this._container.appendChild(storeContainer);
+    this._container.appendChild(descriptionTitle);
+    this._container.appendChild(descriptionContainer);
 
     return this._container;
   }
