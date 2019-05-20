@@ -28,6 +28,7 @@ export default class Content {
    */
   getElement() {
     this._container.className = "content";
+    this._container.id = "content";
 
     /***************************
      ***      Customers      ***

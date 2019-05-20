@@ -1,13 +1,12 @@
 .app {
   height: 100%;
-
   display: flex;
   flex-direction: row;
+  width: 100%; /*to adjust to any screen size */
 }
 
 .app .page {
   flex: 1;
-
   /* Scrollable content */
   overflow-y: auto;
   /* Moving page towards the right to account for fixed sidebar */

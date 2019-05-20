@@ -1,3 +1,10 @@
+
+/* to arrange export to right */
+.export-buttons{
+  position: fixed;
+  right: 30px; 
+}
+
 .export-buttons .fa-file-pdf {
   color: var(--color-red);
 }
